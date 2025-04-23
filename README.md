@@ -20,7 +20,7 @@
 
 * **Бэкенд:**
     * [FastAPI](https://fastapi.tiangolo.com/)
-    * [Pydantic](https://docs.pydantic.dev/latest/)ъ
+    * [Pydantic](https://docs.pydantic.dev/latest/)
     * Модуль `re`
     * [AnyIO](https://anyio.readthedocs.io/en/stable/) - для асинхронного выполнения блокирующих операций (поиска regex) в отдельном потоке.
     * [Uvicorn](https://www.uvicorn.org/) - ASGI-сервер
@@ -35,7 +35,7 @@
 
     ```bash
     git clone https://github.com/zamik36/WebAPI
-    cd regex-debugger # Перейдите в папку проекта (имя папки может отличаться в зависимости от имени репозитория)
+    cd WebAPI
     ```
 
 2.  **Установите Python:** Убедитесь, что у вас установлен Python 3.7+ и `pip`. Вы можете скачать его с [официального сайта Python](https://www.python.org/downloads/).
