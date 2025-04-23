@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Отладчик регулярных выражений</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Отладчик регулярных выражений</h1>
+
+    <div class="input-section">
+        <label for="pattern">Регулярное выражение (Pattern):</label><br>
+        <textarea id="pattern" rows="3" cols="60" placeholder="Введите ваше регулярное выражение"></textarea>
+    </div>
+
+    <div class="flags-section">
+        <strong>Флаги (Flags):</strong><br>
+        <label><input type="checkbox" class="flag-checkbox" value="IGNORECASE"> Игнорировать регистр (i)</label>
+        <label><input type="checkbox" class="flag-checkbox" value="MULTILINE"> Многострочный режим (m)</label>
+        <label><input type="checkbox" class="flag-checkbox" value="DOTALL"> Точка совпадает с переводом строки (s)</label>
+        <label><input type="checkbox" class="flag-checkbox" value="VERBOSE"> Подробный режим (x)</label>
+        </div>
+
+    <div class="input-section">
+        <label for="text">Входной текст (Text):</label><br>
+        <textarea id="text" rows="10" cols="60" placeholder="Введите текст для поиска"></textarea>
+    </div>
+
+    <div class="file-upload-section">
+         <label for="fileUpload">Или загрузите файл с текстом:</label><br>
+         <input type="file" id="fileUpload" accept=".txt">
+         <span id="fileNameDisplay" class="file-name-display"></span>
+    </div>
+
+    <button id="debugButton" onclick="debugRegex()">Отладить</button>
+
+    <h2>Визуализация совпадений:</h2>
+    <div id="highlightedTextOutput" class="highlighted-text-output">
+        <p class="placeholder">Загрузите текст или введите его выше и нажмите "Отладить".</p>
+    </div>
+
+
+    <h2>Список результатов:</h2>
+    <div id="resultsList" class="results-list-section">
+        </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

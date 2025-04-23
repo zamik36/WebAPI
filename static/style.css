@@ -1,0 +1,132 @@
+body {
+    font-family: sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h1, h2 {
+    color: #0056b3;
+    margin-top: 20px;
+}
+
+.input-section {
+    margin-bottom: 20px;
+}
+
+textarea {
+    width: calc(100% - 22px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+    font-size: 0.9em;
+}
+
+.flags-section {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #e9e9e9;
+    border-radius: 5px;
+}
+
+.flags-section label {
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.file-upload-section {
+     margin-bottom: 20px;
+     padding: 10px;
+     border: 1px dashed #ccc;
+     background-color: #f9f9f9;
+     border-radius: 5px;
+}
+
+.file-name-display {
+     margin-left: 10px;
+     font-style: italic;
+     color: #555;
+}
+
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover:not(:disabled) {
+    background-color: #0056b3;
+}
+
+button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+
+.highlighted-text-output,
+.results-list-section {
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+    margin-top: 20px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+    font-size: 0.9em;
+}
+
+.highlighted-text-output .placeholder {
+    color: #888;
+    font-style: italic;
+}
+
+
+.results-list-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.results-list-section li {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+mark {
+    background-color: yellow;
+    padding: 0 2px;
+}
+
+.match-text {
+    font-weight: bold;
+    color: #28a745;
+}
+
+.group-text {
+     font-weight: normal;
+     color: #ffc107;
+     font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+}
+
+
+.error {
+    color: #dc3545;
+    font-weight: bold;
+    border: 1px dashed #dc3545;
+    padding: 10px;
+    background-color: #f8d7da;
+    border-radius: 5px;
+}
